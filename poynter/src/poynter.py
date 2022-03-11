@@ -49,12 +49,3 @@ def malloc(size: size_t):
 
 def free(pointer: Pointer):
     pointer.free()
-
-
-
-if __name__ == "__main__":
-    a = malloc(10)
-    a[1] = 12
-    b = malloc(2)
-    b = a
-    free(a)
